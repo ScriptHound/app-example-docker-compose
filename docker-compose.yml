@@ -15,5 +15,5 @@ services:
     container_name: database
     env_file:
       - .env_example
-    ports:
+    expose:
       - "5432:5432"
