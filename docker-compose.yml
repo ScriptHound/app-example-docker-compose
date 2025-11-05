@@ -7,6 +7,8 @@ services:
       - "8000:8000"
     env_file:
       - .env_example
+    args:
+      - ARGUMENT_VAR=123455611
     environment:
       - mysuperdupervar=${mysuperdupervar}
     depends_on:
