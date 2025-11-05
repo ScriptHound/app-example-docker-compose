@@ -1,9 +1,9 @@
 FROM python:3.10-slim
-ARG ARGUMENT_VAR=${mysuperdupervar}
+ARG ARGUMENT_VAR=${example_var}
 
 COPY . .
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential
-ENV MY_VAR=$(mysuperdupervar)
+ENV MY_VAR=$(example_var)
 RUN echo "MY_VAR is set to: $MY_VAR"
 RUN echo "ARGUMENT_VAR is set to: $ARGUMENT_VAR"
 
