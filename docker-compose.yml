@@ -4,14 +4,14 @@ services:
     build:
       context: .
       args:
-        - ARGUMENT_VAR=${mysuperdupervar}
+        - ARGUMENT_VAR=${example_var}
     container_name: dog-backend
     ports:
       - "8000:8000"
     env_file:
       - .env_example
     environment:
-      - mysuperdupervar=${mysuperdupervar}
+      - example_var=${example_var}
     depends_on:
       database:
         condition: service_healthy
