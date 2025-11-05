@@ -1,4 +1,6 @@
 FROM python:3.10-slim
+
+# example_var это переменная, которую нужно указать в панели управления
 ARG ARGUMENT_VAR=${example_var}
 
 COPY . .
