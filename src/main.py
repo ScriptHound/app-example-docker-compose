@@ -23,8 +23,8 @@ app = FastAPI(lifespan=lifespan)
 async def get_a_dog(id: str, dog_repo: DogRepository = Depends(get_dog_repository)) -> Dog:
     response = await dog_repo.get_dog_by_id(id)
     super_duper_env = os.getenv("mysuperdupervar")
-    if response is None:
-        return JSONResponse(status_code=404, content={"message": "Dog not found"})
+    #if response is None:
+    #    return JSONResponse(status_code=404, content={"message": "Dog not found"})
     return super_duper_env
 
 
