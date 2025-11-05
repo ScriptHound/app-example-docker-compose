@@ -1,5 +1,5 @@
-ARG ARGUMENT_VAR=${mysuperdupervar}
 FROM python:3.10-slim
+ARG ARGUMENT_VAR=${mysuperdupervar}
 
 COPY . .
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential
