@@ -13,3 +13,5 @@
 ```bash
 docker compose up
 ```
+
+trigger redeploy
