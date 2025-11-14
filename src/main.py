@@ -35,4 +35,5 @@ async def create_dog(dog: Dog, dog_repo: DogRepository = Depends(get_dog_reposit
 
 
 if __name__ == "__main__":
+    raise Exception
     uvicorn.run(app, host="0.0.0.0", port=8000)
