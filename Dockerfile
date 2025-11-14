@@ -9,7 +9,7 @@ ENV MY_VAR=$(example_var)
 RUN echo "MY_VAR is set to: $MY_VAR"
 RUN echo "ARGUMENT_VAR is set to: $ARGUMENT_VAR"
 
-COPY requirements.txt .
+COPY r.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 CMD ["python", "/src/main.py"]
